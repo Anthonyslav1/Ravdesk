@@ -12,17 +12,10 @@ module.exports = {
     },
   },
   networks: {
-    zksync_testnet: {
-      url: "https://zksync2-testnet.zksync.dev",
-      ethNetwork: "goerli",
-      chainId: 280,
-      zksync: true,
-    },
-    zksync_mainnet: {
-      url: "https://zksync2-mainnet.zksync.io/",
-      ethNetwork: "mainnet",
-      chainId: 324,
-      zksync: true,
+    hardhat: {},
+    mumbai: {
+      url: 'https://rpc.ankr.com/polygon_mumbai',
+      accounts: ['0x${process.env.PRIVATE_KEY}'],
     },
   },
   paths: {
